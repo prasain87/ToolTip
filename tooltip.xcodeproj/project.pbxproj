@@ -13,6 +13,11 @@
 		C403EFC11F25F1FC004DAC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C403EFBF1F25F1FC004DAC4A /* Main.storyboard */; };
 		C403EFC31F25F1FC004DAC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C403EFC21F25F1FC004DAC4A /* Assets.xcassets */; };
 		C403EFC61F25F1FC004DAC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C403EFC41F25F1FC004DAC4A /* LaunchScreen.storyboard */; };
+		C420E4601F54763400E61455 /* PSToolTip.m in Sources */ = {isa = PBXBuildFile; fileRef = C420E4591F54763400E61455 /* PSToolTip.m */; };
+		C420E4611F54763400E61455 /* PSTooltipAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = C420E45B1F54763400E61455 /* PSTooltipAppearance.m */; };
+		C420E4621F54763400E61455 /* PSTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = C420E45D1F54763400E61455 /* PSTooltipView.m */; };
+		C420E4631F54763400E61455 /* PSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C420E45F1F54763400E61455 /* PSUtils.m */; };
+		C420E4661F54766C00E61455 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C420E4651F54766C00E61455 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		C403EFC21F25F1FC004DAC4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C403EFC51F25F1FC004DAC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C403EFC71F25F1FC004DAC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C420E4581F54763400E61455 /* PSToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSToolTip.h; sourceTree = "<group>"; };
+		C420E4591F54763400E61455 /* PSToolTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSToolTip.m; sourceTree = "<group>"; };
+		C420E45A1F54763400E61455 /* PSTooltipAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTooltipAppearance.h; sourceTree = "<group>"; };
+		C420E45B1F54763400E61455 /* PSTooltipAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTooltipAppearance.m; sourceTree = "<group>"; };
+		C420E45C1F54763400E61455 /* PSTooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTooltipView.h; sourceTree = "<group>"; };
+		C420E45D1F54763400E61455 /* PSTooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTooltipView.m; sourceTree = "<group>"; };
+		C420E45E1F54763400E61455 /* PSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSUtils.h; sourceTree = "<group>"; };
+		C420E45F1F54763400E61455 /* PSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSUtils.m; sourceTree = "<group>"; };
+		C420E4641F54766C00E61455 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C420E4651F54766C00E61455 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 		C403EFB51F25F1FC004DAC4A /* tooltip */ = {
 			isa = PBXGroup;
 			children = (
+				C420E4571F54763400E61455 /* PSTooltip */,
 				C403EFB91F25F1FC004DAC4A /* AppDelegate.h */,
 				C403EFBA1F25F1FC004DAC4A /* AppDelegate.m */,
 				C403EFBC1F25F1FC004DAC4A /* ViewController.h */,
@@ -77,6 +93,23 @@
 				C403EFB71F25F1FC004DAC4A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C420E4571F54763400E61455 /* PSTooltip */ = {
+			isa = PBXGroup;
+			children = (
+				C420E4641F54766C00E61455 /* Constants.h */,
+				C420E4651F54766C00E61455 /* Constants.m */,
+				C420E4581F54763400E61455 /* PSToolTip.h */,
+				C420E4591F54763400E61455 /* PSToolTip.m */,
+				C420E45A1F54763400E61455 /* PSTooltipAppearance.h */,
+				C420E45B1F54763400E61455 /* PSTooltipAppearance.m */,
+				C420E45C1F54763400E61455 /* PSTooltipView.h */,
+				C420E45D1F54763400E61455 /* PSTooltipView.m */,
+				C420E45E1F54763400E61455 /* PSUtils.h */,
+				C420E45F1F54763400E61455 /* PSUtils.m */,
+			);
+			path = PSTooltip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +186,11 @@
 				C403EFBE1F25F1FC004DAC4A /* ViewController.m in Sources */,
 				C403EFBB1F25F1FC004DAC4A /* AppDelegate.m in Sources */,
 				C403EFB81F25F1FC004DAC4A /* main.m in Sources */,
+				C420E4631F54763400E61455 /* PSUtils.m in Sources */,
+				C420E4611F54763400E61455 /* PSTooltipAppearance.m in Sources */,
+				C420E4601F54763400E61455 /* PSToolTip.m in Sources */,
+				C420E4621F54763400E61455 /* PSTooltipView.m in Sources */,
+				C420E4661F54766C00E61455 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +347,7 @@
 				C403EFCC1F25F1FC004DAC4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
